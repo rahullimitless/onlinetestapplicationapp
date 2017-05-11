@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/layout/views/standardLayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/layout/views/header.jsp"></put-attribute>
+		<put-attribute name="menu" value="/WEB-INF/layout/views/menu.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/layout/views/footer.jsp"></put-attribute>
+	</definition>
+
+	<definition extends="base.definition" name="addEmployee">
+		<put-attribute name="title" value="Employee Data Form"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/addEmployee.jsp"></put-attribute>
+	</definition>
+
+
+</tiles-definitions>
